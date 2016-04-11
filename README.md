@@ -5,7 +5,7 @@ Docker image for Differential Expression Analysis on DToxS Data
   - `$ docker pull biodepot/dtoxs_analysis`
 
 2. Run docker image
-  - `$ docker run -it --rm dtoxs_analysis`
+  - `$ docker run -it --rm biodepot/dtoxs_analysis`
 
 3. Extract Gene Expression Samples
   - `$ Rscript Programs/Extract-Gene-Expression-Samples.R Counts/`
