@@ -139,7 +139,7 @@ remove_small	TRUE
 # Parameters for distance heat map.
 #
 # Plot heat map
-plot_heatmap	TRUE
+plot_heatmap	FALSE
 # Lower and upper limits for heatmap plot
 lower_limit	0
 upper_limit	0.02
@@ -147,8 +147,8 @@ upper_limit	0.02
 # Parameters for plotting sample variance and fold change.
 #
 # Plot BCV and Mean-Variance.
-plot_bcv	TRUE
-plot_smear	TRUE
+plot_bcv	FALSE
+plot_smear	FALSE
 # Characters for plotting points: small dot (.) for plotBCV and big dot (•) for plotSmear.
 pt_chars	16, 19
 # Flag of replacing "+" character in state/drug names.
@@ -158,10 +158,10 @@ sub_char	TRUE
 #
 write_read_counts_file	TRUE
 write_exp_configs_file	TRUE
-write_deg_file	TRUE
+write_deg_file	FALSE
 write_top_file	TRUE
-write_calc_file	TRUE
-write_plot_file	TRUE
+write_calc_file	FALSE
+write_plot_file	FALSE
 read_counts_datasets_rdata_file	
 #
 # Parameters for screen output.

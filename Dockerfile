@@ -22,5 +22,6 @@ ADD Params/ $HOME/Params/
 ADD Programs/ $HOME/Programs/
 ADD Results/ $HOME/Results/
 ADD Scripts/ $HOME/Scripts/
+ADD ExpectedResults/ $HOME/ExpectedResults/
 
 CMD ["/bin/bash"]
