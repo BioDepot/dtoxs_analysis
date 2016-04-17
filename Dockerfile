@@ -6,7 +6,7 @@ FROM r-base
 MAINTAINER Trevor Meiss "tmeiss@uw.edu"
 
 # Install required R Packages
-RUN echo 'install.packages(c("matrixStats","gplots"), dependencies=TRUE)' > /tmp/packages.R 
+RUN echo 'install.packages(c("matrixStats","gplots","compare"), dependencies=TRUE)' > /tmp/packages.R 
 RUN echo 'source("https://bioconductor.org/biocLite.R")' >> /tmp/packages.R  
 RUN echo 'biocLite("locfit")' >> /tmp/packages.R
 RUN echo 'biocLite("edgeR")' >> /tmp/packages.R
@@ -22,6 +22,6 @@ ADD Params/ $HOME/Params/
 ADD Programs/ $HOME/Programs/
 ADD Results/ $HOME/Results/
 ADD Scripts/ $HOME/Scripts/
-ADD ExpectedResults/ $HOME/ExpectedResults/
+ADD CompareResults/ $HOME/CompareResults/
 
 CMD ["/bin/bash"]
