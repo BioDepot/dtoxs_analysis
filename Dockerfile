@@ -12,10 +12,5 @@ ENV HOME /home/user
 WORKDIR $HOME
 
 # Add input directories/files
-ADD Configs/ $HOME/Configs/
-ADD Counts/ $HOME/Counts/
-ADD Params/ $HOME/Params/
 ADD Programs/ $HOME/Programs/
-ADD Results/ $HOME/Results/
 ADD Scripts/ $HOME/Scripts/
-ADD CompareResults/ $HOME/CompareResults/
